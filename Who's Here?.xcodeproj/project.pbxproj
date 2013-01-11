@@ -22,6 +22,8 @@
 		C0AC55B016A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55AE16A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld */; };
 		C0AC55B316A0C63C00EEF4E4 /* SEGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55B216A0C63C00EEF4E4 /* SEGMasterViewController.m */; };
 		C0AC55B616A0C63C00EEF4E4 /* SEGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */; };
+		C0AC55BE16A0C80400EEF4E4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55BD16A0C80400EEF4E4 /* Student.m */; };
+		C0AC55C116A0C80400EEF4E4 /* Class.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55C016A0C80400EEF4E4 /* Class.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		C0AC55B216A0C63C00EEF4E4 /* SEGMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEGMasterViewController.m; sourceTree = "<group>"; };
 		C0AC55B416A0C63C00EEF4E4 /* SEGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEGDetailViewController.h; sourceTree = "<group>"; };
 		C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEGDetailViewController.m; sourceTree = "<group>"; };
+		C0AC55BC16A0C80400EEF4E4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		C0AC55BD16A0C80400EEF4E4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		C0AC55BF16A0C80400EEF4E4 /* Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Class.h; sourceTree = "<group>"; };
+		C0AC55C016A0C80400EEF4E4 /* Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Class.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 				C0AC55B416A0C63C00EEF4E4 /* SEGDetailViewController.h */,
 				C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */,
 				C0AC55AE16A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld */,
+				C0AC55BF16A0C80400EEF4E4 /* Class.h */,
+				C0AC55C016A0C80400EEF4E4 /* Class.m */,
+				C0AC55BC16A0C80400EEF4E4 /* Student.h */,
+				C0AC55BD16A0C80400EEF4E4 /* Student.m */,
 				C0AC559716A0C63C00EEF4E4 /* Supporting Files */,
 			);
 			path = "Who's Here?";
@@ -195,6 +205,8 @@
 				C0AC55B016A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld in Sources */,
 				C0AC55B316A0C63C00EEF4E4 /* SEGMasterViewController.m in Sources */,
 				C0AC55B616A0C63C00EEF4E4 /* SEGDetailViewController.m in Sources */,
+				C0AC55BE16A0C80400EEF4E4 /* Student.m in Sources */,
+				C0AC55C116A0C80400EEF4E4 /* Class.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
