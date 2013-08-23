@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00BA3B0171F484100E464BD /* SEGAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00BA3AF171F484100E464BD /* SEGAdViewController.m */; };
+		C00BA3B1171F489900E464BD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC55D716A0D70400EEF4E4 /* iAd.framework */; };
+		C011B53F17C6F40E00A1BC9B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */; };
+		C05358A216E31E9C00DFA830 /* Harpy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05358A016E31E9C00DFA830 /* Harpy.m */; };
+		C0634CDD16A655EA003AB591 /* StudentClass+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CDC16A655EA003AB591 /* StudentClass+Extras.m */; };
+		C0634CE016A65FC3003AB591 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0634CDF16A65FC3003AB591 /* StoreKit.framework */; };
+		C0634CE316A65FEF003AB591 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CE216A65FEF003AB591 /* IAPHelper.m */; };
+		C0634CE616A660DA003AB591 /* WhosHereIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CE516A660DA003AB591 /* WhosHereIAPHelper.m */; };
 		C0AC558F16A0C63C00EEF4E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */; };
 		C0AC559116A0C63C00EEF4E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC559016A0C63C00EEF4E4 /* Foundation.framework */; };
 		C0AC559316A0C63C00EEF4E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC559216A0C63C00EEF4E4 /* CoreGraphics.framework */; };
@@ -14,20 +22,39 @@
 		C0AC559B16A0C63C00EEF4E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0AC559916A0C63C00EEF4E4 /* InfoPlist.strings */; };
 		C0AC559D16A0C63C00EEF4E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC559C16A0C63C00EEF4E4 /* main.m */; };
 		C0AC55A116A0C63C00EEF4E4 /* SEGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55A016A0C63C00EEF4E4 /* SEGAppDelegate.m */; };
-		C0AC55A316A0C63C00EEF4E4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C0AC55A216A0C63C00EEF4E4 /* Default.png */; };
-		C0AC55A516A0C63C00EEF4E4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0AC55A416A0C63C00EEF4E4 /* Default@2x.png */; };
-		C0AC55A716A0C63C00EEF4E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0AC55A616A0C63C00EEF4E4 /* Default-568h@2x.png */; };
 		C0AC55AA16A0C63C00EEF4E4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AC55A816A0C63C00EEF4E4 /* MainStoryboard_iPhone.storyboard */; };
 		C0AC55AD16A0C63C00EEF4E4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AC55AB16A0C63C00EEF4E4 /* MainStoryboard_iPad.storyboard */; };
 		C0AC55B016A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55AE16A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld */; };
 		C0AC55B316A0C63C00EEF4E4 /* SEGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55B216A0C63C00EEF4E4 /* SEGMasterViewController.m */; };
 		C0AC55B616A0C63C00EEF4E4 /* SEGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */; };
-		C0AC55BE16A0C80400EEF4E4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55BD16A0C80400EEF4E4 /* Student.m */; };
-		C0AC55C116A0C80400EEF4E4 /* Class.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55C016A0C80400EEF4E4 /* Class.m */; };
+		C0AC55DB16A1A2C500EEF4E4 /* Student+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55DA16A1A2C500EEF4E4 /* Student+Create.m */; };
+		C0AC55DE16A1A2F000EEF4E4 /* StudentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55DD16A1A2F000EEF4E4 /* StudentClass.m */; };
+		C0AC55E416A1A8AA00EEF4E4 /* SEGStudentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55E316A1A8AA00EEF4E4 /* SEGStudentCell.m */; };
+		C0AC55E716A2342800EEF4E4 /* SEGStudentDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55E616A2342800EEF4E4 /* SEGStudentDetailTableViewController.m */; };
+		C0BD924C16A4FC6400D046AF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD924B16A4FC6400D046AF /* Student.m */; };
+		C0CC8B0016A7B7DD00D53746 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CC8AFF16A7B7DD00D53746 /* Icon.png */; };
+		C0CC8B0316A7B7E300D53746 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CC8B0216A7B7E300D53746 /* Icon@2x.png */; };
+		C0E0BE4016A8E9CF008B83CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BE3F16A8E9CF008B83CE /* Default@2x.png */; };
+		C0E0BE4216A8E9E3008B83CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BE4116A8E9E3008B83CE /* Default-568h@2x.png */; };
+		C8E7EF5DE1B44182B3CC09C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE8A766F6654C2CA286AA0B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0AC558A16A0C63C00EEF4E4 /* Who's Here?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who's Here?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C00BA3AE171F484100E464BD /* SEGAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAdViewController.h; sourceTree = "<group>"; };
+		C00BA3AF171F484100E464BD /* SEGAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAdViewController.m; sourceTree = "<group>"; };
+		C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		C053589F16E31E9C00DFA830 /* Harpy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Harpy.h; sourceTree = "<group>"; };
+		C05358A016E31E9C00DFA830 /* Harpy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Harpy.m; sourceTree = "<group>"; };
+		C05358A116E31E9C00DFA830 /* HarpyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarpyConstants.h; sourceTree = "<group>"; };
+		C0634CDB16A655EA003AB591 /* StudentClass+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StudentClass+Extras.h"; sourceTree = "<group>"; };
+		C0634CDC16A655EA003AB591 /* StudentClass+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StudentClass+Extras.m"; sourceTree = "<group>"; };
+		C0634CDF16A65FC3003AB591 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C0634CE116A65FEF003AB591 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		C0634CE216A65FEF003AB591 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		C0634CE416A660DA003AB591 /* WhosHereIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhosHereIAPHelper.h; sourceTree = "<group>"; };
+		C0634CE516A660DA003AB591 /* WhosHereIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhosHereIAPHelper.m; sourceTree = "<group>"; };
+		C0AC558A16A0C63C00EEF4E4 /* Who's Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who's Here.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0AC559016A0C63C00EEF4E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0AC559216A0C63C00EEF4E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -38,9 +65,6 @@
 		C0AC559E16A0C63C00EEF4E4 /* Who's Here?-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Who's Here?-Prefix.pch"; sourceTree = "<group>"; };
 		C0AC559F16A0C63C00EEF4E4 /* SEGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEGAppDelegate.h; sourceTree = "<group>"; };
 		C0AC55A016A0C63C00EEF4E4 /* SEGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEGAppDelegate.m; sourceTree = "<group>"; };
-		C0AC55A216A0C63C00EEF4E4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C0AC55A416A0C63C00EEF4E4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C0AC55A616A0C63C00EEF4E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C0AC55A916A0C63C00EEF4E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C0AC55AC16A0C63C00EEF4E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C0AC55AF16A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Who_s_Here_.xcdatamodel; sourceTree = "<group>"; };
@@ -48,10 +72,22 @@
 		C0AC55B216A0C63C00EEF4E4 /* SEGMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEGMasterViewController.m; sourceTree = "<group>"; };
 		C0AC55B416A0C63C00EEF4E4 /* SEGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEGDetailViewController.h; sourceTree = "<group>"; };
 		C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEGDetailViewController.m; sourceTree = "<group>"; };
-		C0AC55BC16A0C80400EEF4E4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		C0AC55BD16A0C80400EEF4E4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		C0AC55BF16A0C80400EEF4E4 /* Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Class.h; sourceTree = "<group>"; };
-		C0AC55C016A0C80400EEF4E4 /* Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Class.m; sourceTree = "<group>"; };
+		C0AC55D716A0D70400EEF4E4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C0AC55D916A1A2C500EEF4E4 /* Student+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+Create.h"; sourceTree = "<group>"; };
+		C0AC55DA16A1A2C500EEF4E4 /* Student+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+Create.m"; sourceTree = "<group>"; };
+		C0AC55DC16A1A2F000EEF4E4 /* StudentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentClass.h; sourceTree = "<group>"; };
+		C0AC55DD16A1A2F000EEF4E4 /* StudentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentClass.m; sourceTree = "<group>"; };
+		C0AC55E216A1A8AA00EEF4E4 /* SEGStudentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGStudentCell.h; sourceTree = "<group>"; };
+		C0AC55E316A1A8AA00EEF4E4 /* SEGStudentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGStudentCell.m; sourceTree = "<group>"; };
+		C0AC55E516A2342800EEF4E4 /* SEGStudentDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGStudentDetailTableViewController.h; sourceTree = "<group>"; };
+		C0AC55E616A2342800EEF4E4 /* SEGStudentDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGStudentDetailTableViewController.m; sourceTree = "<group>"; };
+		C0BD924A16A4FC6400D046AF /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		C0BD924B16A4FC6400D046AF /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		C0CC8AFF16A7B7DD00D53746 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		C0CC8B0216A7B7E300D53746 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		C0E0BE3F16A8E9CF008B83CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		C0E0BE4116A8E9E3008B83CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		EEE8A766F6654C2CA286AA0B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,29 +95,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00BA3B1171F489900E464BD /* iAd.framework in Frameworks */,
+				C0634CE016A65FC3003AB591 /* StoreKit.framework in Frameworks */,
 				C0AC558F16A0C63C00EEF4E4 /* UIKit.framework in Frameworks */,
 				C0AC559116A0C63C00EEF4E4 /* Foundation.framework in Frameworks */,
 				C0AC559316A0C63C00EEF4E4 /* CoreGraphics.framework in Frameworks */,
 				C0AC559516A0C63C00EEF4E4 /* CoreData.framework in Frameworks */,
+				C8E7EF5DE1B44182B3CC09C6 /* libPods.a in Frameworks */,
+				C011B53F17C6F40E00A1BC9B /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C053589E16E31E9C00DFA830 /* Harpy */ = {
+			isa = PBXGroup;
+			children = (
+				C053589F16E31E9C00DFA830 /* Harpy.h */,
+				C05358A016E31E9C00DFA830 /* Harpy.m */,
+				C05358A116E31E9C00DFA830 /* HarpyConstants.h */,
+			);
+			path = Harpy;
+			sourceTree = "<group>";
+		};
 		C0AC557F16A0C63C00EEF4E4 = {
 			isa = PBXGroup;
 			children = (
 				C0AC559616A0C63C00EEF4E4 /* Who's Here? */,
 				C0AC558D16A0C63C00EEF4E4 /* Frameworks */,
 				C0AC558B16A0C63C00EEF4E4 /* Products */,
+				6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		C0AC558B16A0C63C00EEF4E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0AC558A16A0C63C00EEF4E4 /* Who's Here?.app */,
+				C0AC558A16A0C63C00EEF4E4 /* Who's Here.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,10 +140,14 @@
 		C0AC558D16A0C63C00EEF4E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */,
+				C0634CDF16A65FC3003AB591 /* StoreKit.framework */,
+				C0AC55D716A0D70400EEF4E4 /* iAd.framework */,
 				C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */,
 				C0AC559016A0C63C00EEF4E4 /* Foundation.framework */,
 				C0AC559216A0C63C00EEF4E4 /* CoreGraphics.framework */,
 				C0AC559416A0C63C00EEF4E4 /* CoreData.framework */,
+				EEE8A766F6654C2CA286AA0B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,20 +155,16 @@
 		C0AC559616A0C63C00EEF4E4 /* Who's Here? */ = {
 			isa = PBXGroup;
 			children = (
+				C053589E16E31E9C00DFA830 /* Harpy */,
+				C0BD924616A4C2BC00D046AF /* Data Models */,
+				C0BD924416A4C2B400D046AF /* View Controllers */,
 				C0AC559F16A0C63C00EEF4E4 /* SEGAppDelegate.h */,
 				C0AC55A016A0C63C00EEF4E4 /* SEGAppDelegate.m */,
 				C0AC55A816A0C63C00EEF4E4 /* MainStoryboard_iPhone.storyboard */,
 				C0AC55AB16A0C63C00EEF4E4 /* MainStoryboard_iPad.storyboard */,
-				C0AC55B116A0C63C00EEF4E4 /* SEGMasterViewController.h */,
-				C0AC55B216A0C63C00EEF4E4 /* SEGMasterViewController.m */,
-				C0AC55B416A0C63C00EEF4E4 /* SEGDetailViewController.h */,
-				C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */,
-				C0AC55AE16A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld */,
-				C0AC55BF16A0C80400EEF4E4 /* Class.h */,
-				C0AC55C016A0C80400EEF4E4 /* Class.m */,
-				C0AC55BC16A0C80400EEF4E4 /* Student.h */,
-				C0AC55BD16A0C80400EEF4E4 /* Student.m */,
 				C0AC559716A0C63C00EEF4E4 /* Supporting Files */,
+				C0AC55E216A1A8AA00EEF4E4 /* SEGStudentCell.h */,
+				C0AC55E316A1A8AA00EEF4E4 /* SEGStudentCell.m */,
 			);
 			path = "Who's Here?";
 			sourceTree = "<group>";
@@ -121,15 +172,51 @@
 		C0AC559716A0C63C00EEF4E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0E0BE4116A8E9E3008B83CE /* Default-568h@2x.png */,
+				C0E0BE3F16A8E9CF008B83CE /* Default@2x.png */,
+				C0CC8B0216A7B7E300D53746 /* Icon@2x.png */,
+				C0CC8AFF16A7B7DD00D53746 /* Icon.png */,
 				C0AC559816A0C63C00EEF4E4 /* Who's Here?-Info.plist */,
 				C0AC559916A0C63C00EEF4E4 /* InfoPlist.strings */,
 				C0AC559C16A0C63C00EEF4E4 /* main.m */,
 				C0AC559E16A0C63C00EEF4E4 /* Who's Here?-Prefix.pch */,
-				C0AC55A216A0C63C00EEF4E4 /* Default.png */,
-				C0AC55A416A0C63C00EEF4E4 /* Default@2x.png */,
-				C0AC55A616A0C63C00EEF4E4 /* Default-568h@2x.png */,
+				C0634CE116A65FEF003AB591 /* IAPHelper.h */,
+				C0634CE216A65FEF003AB591 /* IAPHelper.m */,
+				C0634CE416A660DA003AB591 /* WhosHereIAPHelper.h */,
+				C0634CE516A660DA003AB591 /* WhosHereIAPHelper.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0BD924416A4C2B400D046AF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC55E516A2342800EEF4E4 /* SEGStudentDetailTableViewController.h */,
+				C0AC55E616A2342800EEF4E4 /* SEGStudentDetailTableViewController.m */,
+				C0AC55B116A0C63C00EEF4E4 /* SEGMasterViewController.h */,
+				C0AC55B216A0C63C00EEF4E4 /* SEGMasterViewController.m */,
+				C0AC55B416A0C63C00EEF4E4 /* SEGDetailViewController.h */,
+				C0AC55B516A0C63C00EEF4E4 /* SEGDetailViewController.m */,
+				C00BA3AE171F484100E464BD /* SEGAdViewController.h */,
+				C00BA3AF171F484100E464BD /* SEGAdViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C0BD924616A4C2BC00D046AF /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC55AE16A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld */,
+				C0AC55D916A1A2C500EEF4E4 /* Student+Create.h */,
+				C0AC55DA16A1A2C500EEF4E4 /* Student+Create.m */,
+				C0BD924A16A4FC6400D046AF /* Student.h */,
+				C0BD924B16A4FC6400D046AF /* Student.m */,
+				C0AC55DC16A1A2F000EEF4E4 /* StudentClass.h */,
+				C0AC55DD16A1A2F000EEF4E4 /* StudentClass.m */,
+				C0634CDB16A655EA003AB591 /* StudentClass+Extras.h */,
+				C0634CDC16A655EA003AB591 /* StudentClass+Extras.m */,
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0AC55B916A0C63C00EEF4E4 /* Build configuration list for PBXNativeTarget "Who's Here?" */;
 			buildPhases = (
+				9C7274D6D0084BA4A55E20A9 /* Check Pods Manifest.lock */,
 				C0AC558616A0C63C00EEF4E4 /* Sources */,
 				C0AC558716A0C63C00EEF4E4 /* Frameworks */,
 				C0AC558816A0C63C00EEF4E4 /* Resources */,
+				C0AC55CE16A0C9F800EEF4E4 /* Crashlytics */,
+				86846C6423064CE3B8D514D5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,7 +239,7 @@
 			);
 			name = "Who's Here?";
 			productName = "Who's Here?";
-			productReference = C0AC558A16A0C63C00EEF4E4 /* Who's Here?.app */;
+			productReference = C0AC558A16A0C63C00EEF4E4 /* Who's Here.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,15 +275,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0AC559B16A0C63C00EEF4E4 /* InfoPlist.strings in Resources */,
-				C0AC55A316A0C63C00EEF4E4 /* Default.png in Resources */,
-				C0AC55A516A0C63C00EEF4E4 /* Default@2x.png in Resources */,
-				C0AC55A716A0C63C00EEF4E4 /* Default-568h@2x.png in Resources */,
 				C0AC55AA16A0C63C00EEF4E4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C0AC55AD16A0C63C00EEF4E4 /* MainStoryboard_iPad.storyboard in Resources */,
+				C0CC8B0016A7B7DD00D53746 /* Icon.png in Resources */,
+				C0CC8B0316A7B7E300D53746 /* Icon@2x.png in Resources */,
+				C0E0BE4016A8E9CF008B83CE /* Default@2x.png in Resources */,
+				C0E0BE4216A8E9E3008B83CE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86846C6423064CE3B8D514D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7274D6D0084BA4A55E20A9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0AC55CE16A0C9F800EEF4E4 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 8c3b5813a27efee90990b671a02c3f2fddda98c2";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0AC558616A0C63C00EEF4E4 /* Sources */ = {
@@ -205,8 +343,16 @@
 				C0AC55B016A0C63C00EEF4E4 /* Who_s_Here_.xcdatamodeld in Sources */,
 				C0AC55B316A0C63C00EEF4E4 /* SEGMasterViewController.m in Sources */,
 				C0AC55B616A0C63C00EEF4E4 /* SEGDetailViewController.m in Sources */,
-				C0AC55BE16A0C80400EEF4E4 /* Student.m in Sources */,
-				C0AC55C116A0C80400EEF4E4 /* Class.m in Sources */,
+				C0AC55DB16A1A2C500EEF4E4 /* Student+Create.m in Sources */,
+				C0AC55DE16A1A2F000EEF4E4 /* StudentClass.m in Sources */,
+				C0AC55E416A1A8AA00EEF4E4 /* SEGStudentCell.m in Sources */,
+				C0AC55E716A2342800EEF4E4 /* SEGStudentDetailTableViewController.m in Sources */,
+				C0BD924C16A4FC6400D046AF /* Student.m in Sources */,
+				C0634CDD16A655EA003AB591 /* StudentClass+Extras.m in Sources */,
+				C0634CE316A65FEF003AB591 /* IAPHelper.m in Sources */,
+				C0634CE616A660DA003AB591 /* WhosHereIAPHelper.m in Sources */,
+				C05358A216E31E9C00DFA830 /* Harpy.m in Sources */,
+				C00BA3B0171F484100E464BD /* SEGAdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +395,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Whos Here Dev";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -264,6 +410,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -278,7 +425,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Samuel Giddins";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Samuel Giddins";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -286,6 +434,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "8C841430-0594-481E-99E6-F3D5E7F06AB6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8C841430-0594-481E-99E6-F3D5E7F06AB6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -294,22 +444,36 @@
 		};
 		C0AC55BA16A0C63C00EEF4E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Samuel Giddins (BVEYFMJ4ZT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Who's Here?/Who's Here?-Prefix.pch";
 				INFOPLIST_FILE = "Who's Here?/Who's Here?-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Who's Here";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14A5DF9C-35E7-472C-AE0F-292D41D93155";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		C0AC55BB16A0C63C00EEF4E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Who's Here?/Who's Here?-Prefix.pch";
 				INFOPLIST_FILE = "Who's Here?/Who's Here?-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Who's Here";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -333,6 +497,7 @@
 				C0AC55BB16A0C63C00EEF4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

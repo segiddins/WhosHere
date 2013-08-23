@@ -6,13 +6,14 @@
 //  Copyright (c) 2013 Samuel E. Giddins. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UI7Kit/UI7Kit.h>
 
 #import "SEGAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
+        [UI7Kit patchIfNeeded];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([SEGAppDelegate class]));
     }
 }

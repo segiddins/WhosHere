@@ -18,5 +18,7 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (BOOL)hasPurchasedPro;
+- (void)refreshProStatus;
 
 @end

@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
 @class SEGDetailViewController;
 
 #import <CoreData/CoreData.h>
 
-@interface SEGMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface SEGMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, ADBannerViewDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) SEGDetailViewController *detailViewController;
 

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C0AC558916A0C63C00EEF4E4"
-               BuildableName = "Who&apos;s Here?.app"
+               BuildableName = "Who&apos;s Here.app"
                BlueprintName = "Who&apos;s Here?"
                ReferencedContainer = "container:Who&apos;s Here?.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0AC558916A0C63C00EEF4E4"
-            BuildableName = "Who&apos;s Here?.app"
+            BuildableName = "Who&apos;s Here.app"
             BlueprintName = "Who&apos;s Here?"
             ReferencedContainer = "container:Who&apos;s Here?.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0AC558916A0C63C00EEF4E4"
-            BuildableName = "Who&apos;s Here?.app"
+            BuildableName = "Who&apos;s Here.app"
             BlueprintName = "Who&apos;s Here?"
             ReferencedContainer = "container:Who&apos;s Here?.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0AC558916A0C63C00EEF4E4"
-            BuildableName = "Who&apos;s Here?.app"
+            BuildableName = "Who&apos;s Here.app"
             BlueprintName = "Who&apos;s Here?"
             ReferencedContainer = "container:Who&apos;s Here?.xcodeproj">
          </BuildableReference>

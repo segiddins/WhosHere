@@ -10,7 +10,22 @@
 
 #import "SEGMasterViewController.h"
 
-@implementation SEGAppDelegate
+#import <Crashlytics/Crashlytics.h>
+
+#import "WhosHereIAPHelper.h"
+
+#import "Harpy.h"
+
+#import "SEGAdViewController.h"
+
+NSString *SEGAppShouldDisplayBannerNotification = @"SEGAppShouldDisplayBannerNotification";
+NSString *SEGAppShouldHideBannerNotification    = @"SEGAppShouldHideBannerNotification";
+NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNotification";
+
+
+@implementation SEGAppDelegate {
+    BOOL _hasPurchasedPro;
+}
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
@@ -18,7 +33,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
+    [Crashlytics startWithAPIKey:***REMOVED***];
+    [Harpy checkVersion];
     // Override point for customization after application launch.
+    [WhosHereIAPHelper sharedInstance];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
@@ -29,42 +48,51 @@
         controller.managedObjectContext = self.managedObjectContext;
     } else {
         UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+        SEGAdViewController *advc = [[SEGAdViewController alloc] initWithContentViewController:navigationController];
+        self.window.rootViewController = advc;
         SEGMasterViewController *controller = (SEGMasterViewController *)navigationController.topViewController;
         controller.managedObjectContext = self.managedObjectContext;
     }
+    [self refreshProStatus];
     return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
 
 - (void)saveContext
 {
+    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
@@ -143,11 +171,25 @@
          Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
          
          */
+        [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }    
     
     return _persistentStoreCoordinator;
+}
+
+- (BOOL)hasPurchasedPro
+{
+    [self refreshProStatus];
+    return _hasPurchasedPro;
+}
+
+- (void)refreshProStatus
+{
+    _hasPurchasedPro = [[NSUserDefaults standardUserDefaults] boolForKey:@"me.segiddins.whoshere.proupgrade"];
+    if (_hasPurchasedPro) [NSNotificationCenter.defaultCenter postNotificationName:SEGAppShouldDeleteBannerNotification object:self];
+
 }
 
 #pragma mark - Application's Documents directory

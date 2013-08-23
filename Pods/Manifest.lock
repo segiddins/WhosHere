@@ -1,0 +1,27 @@
+PODS:
+  - cdebug (0.1.1)
+  - FoundationExtension (0.39.1):
+    - cdebug (~> 0.1)
+    - FoundationExtension/CocoaExtension
+    - FoundationExtension/FoundationExtension
+    - FoundationExtension/UIKitExtension
+  - FoundationExtension/FoundationExtension (0.39.1):
+    - cdebug (~> 0.1)
+  - FoundationExtension/UIKitExtension (0.39.1):
+    - cdebug (~> 0.1)
+    - FoundationExtension/FoundationExtension
+  - SevenSwitch (1.3.0)
+  - UI7Kit (0.8.7):
+    - FoundationExtension (~> 0.39)
+    - SevenSwitch
+
+DEPENDENCIES:
+  - UI7Kit
+
+SPEC CHECKSUMS:
+  cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
+  FoundationExtension: fdd92e10521774428b2280c715c059e7ad6710c8
+  SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
+  UI7Kit: 5e4613e15827d25cba0da3d65d37d3eee50f9f56
+
+COCOAPODS: 0.22.3
