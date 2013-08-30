@@ -61,7 +61,7 @@ UIImage *UI7PickerLikeViewGradientImage(UIColor *maskColor, CGFloat topGradient,
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(1.0, height), NO, .0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     UIColor *color = [UIColor colorWithWhite:topGradient alpha:1.0f];
-    CGGradientRef gradient = CGGradientCreateWithColors(color.CGColorSpace, (__bridge CFArrayRef)@[(__bridge id)color.CGColor, (__bridge id)[UIColor colorWithWhite:buttomGradient alpha:1.0f].CGColor], NULL);
+    CGGradientRef gradient = CGGradientCreateWithColors(color.CGColorSpace, (CFArrayRef)@[(id)color.CGColor, (id)[UIColor colorWithWhite:buttomGradient alpha:1.0f].CGColor], NULL);
     CGContextDrawLinearGradient(context, gradient, CGPointMake(0.5, .0), CGPointMake(0.5, height), 3);
     UIImage *maskImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -211,7 +211,9 @@ UIImage *UI7PickerLikeViewGradientImage(UIColor *maskColor, CGFloat topGradient,
 
 - (NSInteger)selectedRowInComponent:(NSInteger)component {
     UITableView *table = self.tables[component];
-    return [table indexPathForSelectedRow].row;
+    CGFloat rowHeight = [self rowSizeForComponent:component].height;
+    NSInteger index = (NSInteger)((table.contentOffset.y + rowHeight * 0.5) / rowHeight);
+    return index;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -219,12 +221,10 @@ UIImage *UI7PickerLikeViewGradientImage(UIColor *maskColor, CGFloat topGradient,
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    UITableView *table = (id)scrollView;
-    CGFloat rowHeight = [self rowSizeForComponent:[self.tables indexOfObject:table]].height;
-    NSInteger index = (NSInteger)((table.contentOffset.y + rowHeight * 0.5) / rowHeight);
+    NSInteger component = [self.tables indexOfObject:scrollView];
 
     if ([self.delegate respondsToSelector:@selector(pickerView:didSelectRow:inComponent:)]) {
-        NSInteger component = [self.tables indexOfObject:table];
+        NSInteger index = [self selectedRowInComponent:component];
         [self.delegate pickerView:(id)self didSelectRow:index inComponent:component];
     }
 }

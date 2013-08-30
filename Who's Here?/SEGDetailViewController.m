@@ -10,6 +10,8 @@
 #import "SEGStudentDetailTableViewController.h"
 #import "SEGStudentCell.h"
 #import <UI7Kit/UI7Color.h>
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 @interface SEGDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -64,6 +66,7 @@
         if (![barItem.title isEqualToString:@"Start Over"]) barItem.enabled = NO;
         [barItem setTitleTextAttributes:@{UITextAttributeTextShadowColor : [UIColor clearColor], UITextAttributeTextColor : [UI7Color defaultTintColor]} forState:UIControlStateNormal];
     }
+    GAI_REPORT_SCREEN(@"Individual Class");
 	// Do any additional setup after loading the view, typically from a nib.
     [self controllerDidChangeContent:self.fetchedResultsController];
 }

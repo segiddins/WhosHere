@@ -40,6 +40,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    GAI_REPORT_SCREEN(@"Individual Student");
     self.navigationController.toolbarHidden = YES;
 }
 
@@ -136,7 +137,6 @@
     NSLog(@"removing student");
     [self.managedObjectContext deleteObject:self.student];
     
-    [self saveStudent];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

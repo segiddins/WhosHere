@@ -18,6 +18,9 @@
 
 #import "SEGAdViewController.h"
 
+#import "GAI.h"
+#import "GAITracker.h"
+
 NSString *SEGAppShouldDisplayBannerNotification = @"SEGAppShouldDisplayBannerNotification";
 NSString *SEGAppShouldHideBannerNotification    = @"SEGAppShouldHideBannerNotification";
 NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNotification";
@@ -54,6 +57,9 @@ NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNoti
         controller.managedObjectContext = self.managedObjectContext;
     }
     [self refreshProStatus];
+    [[GAI sharedInstance] setDefaultTracker:[[GAI sharedInstance] trackerWithTrackingId:***REMOVED***]];
+    [GAI sharedInstance].dispatchInterval = 20;
+    [[[GAI sharedInstance] defaultTracker] set:@"Pro User" value:_hasPurchasedPro ? @"Yes" : @"No"];
     return YES;
 }
 							

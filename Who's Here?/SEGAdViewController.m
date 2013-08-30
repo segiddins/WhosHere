@@ -1,6 +1,6 @@
 #import "SEGAdViewController.h"
 #import "SEGAppDelegate.h"
-
+#import "GAIDictionaryBuilder.h"
 
 @interface SEGAdViewController () <ADBannerViewDelegate>
 
@@ -125,6 +125,7 @@
 }
 
 - (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave{
+    [GAI.sharedInstance.defaultTracker send:[[GAIDictionaryBuilder createEventWithCategory:@"Ad" action:@"Ad Tapped" label:@"iAd" value:@0] build]];
     //   NSLog(@"in bannerViewActionShouldBegin");
 //    [[NSNotificationCenter defaultCenter] postNotificationName:SEBannerViewActionWillBeginNotification object:self];
     return YES;

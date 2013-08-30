@@ -53,6 +53,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    GAI_REPORT_SCREEN(@"Classes");
     self.navigationController.toolbarHidden = YES;
 }
 

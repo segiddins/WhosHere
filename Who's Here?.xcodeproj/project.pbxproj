@@ -15,6 +15,10 @@
 		C0634CE016A65FC3003AB591 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0634CDF16A65FC3003AB591 /* StoreKit.framework */; };
 		C0634CE316A65FEF003AB591 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CE216A65FEF003AB591 /* IAPHelper.m */; };
 		C0634CE616A660DA003AB591 /* WhosHereIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CE516A660DA003AB591 /* WhosHereIAPHelper.m */; };
+		C0738C6117D02BEB00CB6E7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6017D02BEB00CB6E7E /* SystemConfiguration.framework */; };
+		C0738C6317D02BF500CB6E7E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6217D02BF500CB6E7E /* MobileCoreServices.framework */; };
+		C0738C6917D02E0800CB6E7E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6817D02E0800CB6E7E /* libz.dylib */; };
+		C0738C6B17D02E1800CB6E7E /* libGoogleAnalytics_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6A17D02E1800CB6E7E /* libGoogleAnalytics_debug.a */; };
 		C0AC558F16A0C63C00EEF4E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */; };
 		C0AC559116A0C63C00EEF4E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC559016A0C63C00EEF4E4 /* Foundation.framework */; };
 		C0AC559316A0C63C00EEF4E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC559216A0C63C00EEF4E4 /* CoreGraphics.framework */; };
@@ -54,6 +58,16 @@
 		C0634CE216A65FEF003AB591 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
 		C0634CE416A660DA003AB591 /* WhosHereIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhosHereIAPHelper.h; sourceTree = "<group>"; };
 		C0634CE516A660DA003AB591 /* WhosHereIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhosHereIAPHelper.m; sourceTree = "<group>"; };
+		C0738C5817D02A3900CB6E7E /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		C0738C5917D02A3900CB6E7E /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		C0738C5A17D02A3900CB6E7E /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		C0738C5B17D02A3900CB6E7E /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		C0738C5C17D02A3900CB6E7E /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		C0738C5D17D02A3900CB6E7E /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		C0738C6017D02BEB00CB6E7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C0738C6217D02BF500CB6E7E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C0738C6817D02E0800CB6E7E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C0738C6A17D02E1800CB6E7E /* libGoogleAnalytics_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics_debug.a; path = ../../../Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library/libGoogleAnalytics_debug.a; sourceTree = "<group>"; };
 		C0AC558A16A0C63C00EEF4E4 /* Who's Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who's Here.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0AC559016A0C63C00EEF4E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0738C6917D02E0800CB6E7E /* libz.dylib in Frameworks */,
+				C0738C6B17D02E1800CB6E7E /* libGoogleAnalytics_debug.a in Frameworks */,
+				C0738C6317D02BF500CB6E7E /* MobileCoreServices.framework in Frameworks */,
+				C0738C6117D02BEB00CB6E7E /* SystemConfiguration.framework in Frameworks */,
 				C00BA3B1171F489900E464BD /* iAd.framework in Frameworks */,
 				C0634CE016A65FC3003AB591 /* StoreKit.framework in Frameworks */,
 				C0AC558F16A0C63C00EEF4E4 /* UIKit.framework in Frameworks */,
@@ -119,6 +137,19 @@
 			path = Harpy;
 			sourceTree = "<group>";
 		};
+		C0738C5717D02A3900CB6E7E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C0738C5817D02A3900CB6E7E /* GAI.h */,
+				C0738C5917D02A3900CB6E7E /* GAIDictionaryBuilder.h */,
+				C0738C5A17D02A3900CB6E7E /* GAIFields.h */,
+				C0738C5B17D02A3900CB6E7E /* GAILogger.h */,
+				C0738C5C17D02A3900CB6E7E /* GAITrackedViewController.h */,
+				C0738C5D17D02A3900CB6E7E /* GAITracker.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		C0AC557F16A0C63C00EEF4E4 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +171,10 @@
 		C0AC558D16A0C63C00EEF4E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0738C6A17D02E1800CB6E7E /* libGoogleAnalytics_debug.a */,
+				C0738C6817D02E0800CB6E7E /* libz.dylib */,
+				C0738C6217D02BF500CB6E7E /* MobileCoreServices.framework */,
+				C0738C6017D02BEB00CB6E7E /* SystemConfiguration.framework */,
 				C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */,
 				C0634CDF16A65FC3003AB591 /* StoreKit.framework */,
 				C0AC55D716A0D70400EEF4E4 /* iAd.framework */,
@@ -155,6 +190,7 @@
 		C0AC559616A0C63C00EEF4E4 /* Who's Here? */ = {
 			isa = PBXGroup;
 			children = (
+				C0738C5717D02A3900CB6E7E /* Library */,
 				C053589E16E31E9C00DFA830 /* Harpy */,
 				C0BD924616A4C2BC00D046AF /* Data Models */,
 				C0BD924416A4C2B400D046AF /* View Controllers */,
@@ -399,6 +435,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -429,6 +467,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Samuel Giddins";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -454,6 +494,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Who's Here?/Who's Here?-Prefix.pch";
 				INFOPLIST_FILE = "Who's Here?/Who's Here?-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Who's Here?/Library\"",
+					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
+					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0\"",
+				);
 				PRODUCT_NAME = "Who's Here";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14A5DF9C-35E7-472C-AE0F-292D41D93155";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -472,6 +518,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Who's Here?/Who's Here?-Prefix.pch";
 				INFOPLIST_FILE = "Who's Here?/Who's Here?-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Who's Here?/Library\"",
+					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
+					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0\"",
+				);
 				PRODUCT_NAME = "Who's Here";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

@@ -3,6 +3,8 @@
 #import <StoreKit/StoreKit.h>
 #import "SEGAppDelegate.h"
 
+#import "GAIDictionaryBuilder.h"
+
 // 2
 @interface IAPHelper () <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 @end
@@ -108,6 +110,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         switch (transaction.transactionState)
         {
             case SKPaymentTransactionStatePurchased:
+                [[GAI sharedInstance].defaultTracker send:[[GAIDictionaryBuilder createItemWithTransactionId:transaction.transactionIdentifier name:@"Purchased Pro" sku:transaction.payment.productIdentifier category:@"In-App Purchase" price:@.7 quantity:@(transaction.payment.quantity) currencyCode:@"USD"] build]];
                 [self completeTransaction:transaction];
                 break;
             case SKPaymentTransactionStateFailed:
