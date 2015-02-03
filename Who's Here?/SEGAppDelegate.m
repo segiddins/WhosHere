@@ -37,7 +37,7 @@ NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNoti
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
-    [Crashlytics startWithAPIKey:***REMOVED***];
+    [Crashlytics startWithAPIKey:nil];
     [Harpy checkVersion];
     // Override point for customization after application launch.
     [WhosHereIAPHelper sharedInstance];
@@ -57,7 +57,7 @@ NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNoti
         controller.managedObjectContext = self.managedObjectContext;
     }
     [self refreshProStatus];
-    [[GAI sharedInstance] setDefaultTracker:[[GAI sharedInstance] trackerWithTrackingId:***REMOVED***]];
+    [[GAI sharedInstance] setDefaultTracker:[[GAI sharedInstance] trackerWithTrackingId:nil]];
     [GAI sharedInstance].dispatchInterval = 20;
     [[[GAI sharedInstance] defaultTracker] set:@"Pro User" value:_hasPurchasedPro ? @"Yes" : @"No"];
     return YES;
