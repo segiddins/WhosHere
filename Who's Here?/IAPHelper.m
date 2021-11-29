@@ -3,8 +3,6 @@
 #import <StoreKit/StoreKit.h>
 #import "SEGAppDelegate.h"
 
-#import "GAIDictionaryBuilder.h"
-
 // 2
 @interface IAPHelper () <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 @end
@@ -41,7 +39,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         }
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
         SEGLog(@"%@", _productIdentifiers);
-        _appDelegate = [[UIApplication sharedApplication] delegate];
+        _appDelegate = (SEGAppDelegate *)[[UIApplication sharedApplication] delegate];
     }
     
     return self;
@@ -110,7 +108,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         switch (transaction.transactionState)
         {
             case SKPaymentTransactionStatePurchased:
-                [[GAI sharedInstance].defaultTracker send:[[GAIDictionaryBuilder createItemWithTransactionId:transaction.transactionIdentifier name:@"Purchased Pro" sku:transaction.payment.productIdentifier category:@"In-App Purchase" price:@.7 quantity:@(transaction.payment.quantity) currencyCode:@"USD"] build]];
+//                [[GAI sharedInstance].defaultTracker send:[[GAIDictionaryBuilder createItemWithTransactionId:transaction.transactionIdentifier name:@"Purchased Pro" sku:transaction.payment.productIdentifier category:@"In-App Purchase" price:@.7 quantity:@(transaction.payment.quantity) currencyCode:@"USD"] build]];
                 [self completeTransaction:transaction];
                 break;
             case SKPaymentTransactionStateFailed:

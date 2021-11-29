@@ -18,7 +18,6 @@
 #import <StoreKit/StoreKit.h>
 
 @interface SEGMasterViewController ()
-@property (weak, nonatomic) IBOutlet ADBannerView *adBannerView;
 @property (nonatomic) BOOL adBannerViewIsVisible;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -57,15 +56,9 @@
     self.navigationController.toolbarHidden = YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)insertNewObject:(id)sender
 {
-    SEGLog(@"%d", [_fetchedResultsController.fetchedObjects count]);
+    SEGLog(@"%lu", (unsigned long)[_fetchedResultsController.fetchedObjects count]);
     if (![_appDelegate hasPurchasedPro] && [_fetchedResultsController.fetchedObjects count] >= 2) { //
         [self promptForIAP];
         return;
@@ -162,7 +155,7 @@
              // Replace this implementation with code to handle the error appropriately.
              // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             SEGLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            [[Crashlytics sharedInstance] crash];
+//            [[Crashlytics sharedInstance] crash];
         }
         SEGLog(@"deleted class");
     }

@@ -9,16 +9,12 @@
 /* Begin PBXBuildFile section */
 		C00BA3B0171F484100E464BD /* SEGAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00BA3AF171F484100E464BD /* SEGAdViewController.m */; };
 		C00BA3B1171F489900E464BD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC55D716A0D70400EEF4E4 /* iAd.framework */; };
-		C011B53F17C6F40E00A1BC9B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */; };
 		C05358A216E31E9C00DFA830 /* Harpy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05358A016E31E9C00DFA830 /* Harpy.m */; };
 		C0634CDD16A655EA003AB591 /* StudentClass+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CDC16A655EA003AB591 /* StudentClass+Extras.m */; };
-		C0634CE016A65FC3003AB591 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0634CDF16A65FC3003AB591 /* StoreKit.framework */; };
 		C0634CE316A65FEF003AB591 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CE216A65FEF003AB591 /* IAPHelper.m */; };
 		C0634CE616A660DA003AB591 /* WhosHereIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0634CE516A660DA003AB591 /* WhosHereIAPHelper.m */; };
 		C0738C6117D02BEB00CB6E7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6017D02BEB00CB6E7E /* SystemConfiguration.framework */; };
-		C0738C6317D02BF500CB6E7E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6217D02BF500CB6E7E /* MobileCoreServices.framework */; };
 		C0738C6917D02E0800CB6E7E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6817D02E0800CB6E7E /* libz.dylib */; };
-		C0738C6B17D02E1800CB6E7E /* libGoogleAnalytics_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0738C6A17D02E1800CB6E7E /* libGoogleAnalytics_debug.a */; };
 		C0AC558F16A0C63C00EEF4E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */; };
 		C0AC559116A0C63C00EEF4E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC559016A0C63C00EEF4E4 /* Foundation.framework */; };
 		C0AC559316A0C63C00EEF4E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC559216A0C63C00EEF4E4 /* CoreGraphics.framework */; };
@@ -36,15 +32,15 @@
 		C0AC55E416A1A8AA00EEF4E4 /* SEGStudentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55E316A1A8AA00EEF4E4 /* SEGStudentCell.m */; };
 		C0AC55E716A2342800EEF4E4 /* SEGStudentDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AC55E616A2342800EEF4E4 /* SEGStudentDetailTableViewController.m */; };
 		C0BD924C16A4FC6400D046AF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD924B16A4FC6400D046AF /* Student.m */; };
+		C0C4EAC027547A78009B43E6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C4EABF27547A77009B43E6 /* StoreKit.framework */; };
+		C0C4EAC227547AAA009B43E6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C4EAC127547AAA009B43E6 /* CoreServices.framework */; };
 		C0CC8B0016A7B7DD00D53746 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CC8AFF16A7B7DD00D53746 /* Icon.png */; };
 		C0CC8B0316A7B7E300D53746 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CC8B0216A7B7E300D53746 /* Icon@2x.png */; };
 		C0E0BE4016A8E9CF008B83CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BE3F16A8E9CF008B83CE /* Default@2x.png */; };
 		C0E0BE4216A8E9E3008B83CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BE4116A8E9E3008B83CE /* Default-568h@2x.png */; };
-		C8E7EF5DE1B44182B3CC09C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE8A766F6654C2CA286AA0B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C00BA3AE171F484100E464BD /* SEGAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAdViewController.h; sourceTree = "<group>"; };
 		C00BA3AF171F484100E464BD /* SEGAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAdViewController.m; sourceTree = "<group>"; };
 		C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -53,7 +49,6 @@
 		C05358A116E31E9C00DFA830 /* HarpyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarpyConstants.h; sourceTree = "<group>"; };
 		C0634CDB16A655EA003AB591 /* StudentClass+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StudentClass+Extras.h"; sourceTree = "<group>"; };
 		C0634CDC16A655EA003AB591 /* StudentClass+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StudentClass+Extras.m"; sourceTree = "<group>"; };
-		C0634CDF16A65FC3003AB591 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C0634CE116A65FEF003AB591 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
 		C0634CE216A65FEF003AB591 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
 		C0634CE416A660DA003AB591 /* WhosHereIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhosHereIAPHelper.h; sourceTree = "<group>"; };
@@ -97,11 +92,12 @@
 		C0AC55E616A2342800EEF4E4 /* SEGStudentDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGStudentDetailTableViewController.m; sourceTree = "<group>"; };
 		C0BD924A16A4FC6400D046AF /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		C0BD924B16A4FC6400D046AF /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		C0C4EABF27547A77009B43E6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C0C4EAC127547AAA009B43E6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		C0CC8AFF16A7B7DD00D53746 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		C0CC8B0216A7B7E300D53746 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		C0E0BE3F16A8E9CF008B83CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		C0E0BE4116A8E9E3008B83CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		EEE8A766F6654C2CA286AA0B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,18 +105,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C4EAC227547AAA009B43E6 /* CoreServices.framework in Frameworks */,
+				C0C4EAC027547A78009B43E6 /* StoreKit.framework in Frameworks */,
 				C0738C6917D02E0800CB6E7E /* libz.dylib in Frameworks */,
-				C0738C6B17D02E1800CB6E7E /* libGoogleAnalytics_debug.a in Frameworks */,
-				C0738C6317D02BF500CB6E7E /* MobileCoreServices.framework in Frameworks */,
 				C0738C6117D02BEB00CB6E7E /* SystemConfiguration.framework in Frameworks */,
 				C00BA3B1171F489900E464BD /* iAd.framework in Frameworks */,
-				C0634CE016A65FC3003AB591 /* StoreKit.framework in Frameworks */,
 				C0AC558F16A0C63C00EEF4E4 /* UIKit.framework in Frameworks */,
 				C0AC559116A0C63C00EEF4E4 /* Foundation.framework in Frameworks */,
 				C0AC559316A0C63C00EEF4E4 /* CoreGraphics.framework in Frameworks */,
 				C0AC559516A0C63C00EEF4E4 /* CoreData.framework in Frameworks */,
-				C8E7EF5DE1B44182B3CC09C6 /* libPods.a in Frameworks */,
-				C011B53F17C6F40E00A1BC9B /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +149,6 @@
 				C0AC559616A0C63C00EEF4E4 /* Who's Here? */,
 				C0AC558D16A0C63C00EEF4E4 /* Frameworks */,
 				C0AC558B16A0C63C00EEF4E4 /* Products */,
-				6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,18 +163,18 @@
 		C0AC558D16A0C63C00EEF4E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0C4EAC127547AAA009B43E6 /* CoreServices.framework */,
+				C0C4EABF27547A77009B43E6 /* StoreKit.framework */,
 				C0738C6A17D02E1800CB6E7E /* libGoogleAnalytics_debug.a */,
 				C0738C6817D02E0800CB6E7E /* libz.dylib */,
 				C0738C6217D02BF500CB6E7E /* MobileCoreServices.framework */,
 				C0738C6017D02BEB00CB6E7E /* SystemConfiguration.framework */,
 				C011B53E17C6F40E00A1BC9B /* Crashlytics.framework */,
-				C0634CDF16A65FC3003AB591 /* StoreKit.framework */,
 				C0AC55D716A0D70400EEF4E4 /* iAd.framework */,
 				C0AC558E16A0C63C00EEF4E4 /* UIKit.framework */,
 				C0AC559016A0C63C00EEF4E4 /* Foundation.framework */,
 				C0AC559216A0C63C00EEF4E4 /* CoreGraphics.framework */,
 				C0AC559416A0C63C00EEF4E4 /* CoreData.framework */,
-				EEE8A766F6654C2CA286AA0B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,12 +254,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0AC55B916A0C63C00EEF4E4 /* Build configuration list for PBXNativeTarget "Who's Here?" */;
 			buildPhases = (
-				9C7274D6D0084BA4A55E20A9 /* Check Pods Manifest.lock */,
 				C0AC558616A0C63C00EEF4E4 /* Sources */,
 				C0AC558716A0C63C00EEF4E4 /* Frameworks */,
 				C0AC558816A0C63C00EEF4E4 /* Resources */,
-				C0AC55CE16A0C9F800EEF4E4 /* Crashlytics */,
-				86846C6423064CE3B8D514D5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,12 +276,19 @@
 				CLASSPREFIX = SEG;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Samuel E. Giddins";
+				TargetAttributes = {
+					C0AC558916A0C63C00EEF4E4 = {
+						DevelopmentTeam = FDGCLGAUQG;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = C0AC558416A0C63C00EEF4E4 /* Build configuration list for PBXProject "Who's Here?" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C0AC557F16A0C63C00EEF4E4;
@@ -321,53 +317,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		86846C6423064CE3B8D514D5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C7274D6D0084BA4A55E20A9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C0AC55CE16A0C9F800EEF4E4 /* Crashlytics */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Crashlytics;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Crashlytics.framework/run 8c3b5813a27efee90990b671a02c3f2fddda98c2";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0AC558616A0C63C00EEF4E4 /* Sources */ = {
@@ -431,7 +380,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Whos Here Dev";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -448,7 +396,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,8 +410,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Samuel Giddins";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Samuel Giddins";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -474,8 +419,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "8C841430-0594-481E-99E6-F3D5E7F06AB6";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8C841430-0594-481E-99E6-F3D5E7F06AB6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -484,9 +427,9 @@
 		};
 		C0AC55BA16A0C63C00EEF4E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Samuel Giddins (BVEYFMJ4ZT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDGCLGAUQG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -494,14 +437,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Who's Here?/Who's Here?-Prefix.pch";
 				INFOPLIST_FILE = "Who's Here?/Who's Here?-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Who's Here?/Library\"",
-					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
-					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0\"",
 				);
 				PRODUCT_NAME = "Who's Here";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14A5DF9C-35E7-472C-AE0F-292D41D93155";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -509,8 +450,9 @@
 		};
 		C0AC55BB16A0C63C00EEF4E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C588491A25645FCB4FAB1D6 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDGCLGAUQG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -518,11 +460,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Who's Here?/Who's Here?-Prefix.pch";
 				INFOPLIST_FILE = "Who's Here?/Who's Here?-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Who's Here?/Library\"",
-					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
-					"\"$(SRCROOT)/../../../Downloads/GoogleAnalyticsServicesiOS_3.0\"",
 				);
 				PRODUCT_NAME = "Who's Here";
 				TARGETED_DEVICE_FAMILY = 1;

@@ -13,7 +13,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface SEGMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, ADBannerViewDelegate, UIAlertViewDelegate>
+@interface SEGMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) SEGDetailViewController *detailViewController;
 

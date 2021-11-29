@@ -12,14 +12,12 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
-    #import <Crashlytics/Crashlytics.h>
-    #import "GAI.h"
-    #import "GAIDictionaryBuilder.h"
-    #import "GAIFields.h"
-#define GAI_REPORT_SCREEN(screen)     [GAI.sharedInstance.defaultTracker send:[[[GAIDictionaryBuilder createAppView] set:screen forKey:kGAIDescription] build]]
+#define GAI_REPORT_SCREEN(screen)     do {} while(false)
+
+//[GAI.sharedInstance.defaultTracker send:[[[GAIDictionaryBuilder createAppView] set:screen forKey:kGAIDescription] build]]
 #endif
 
-#define SEGLog(fmt ...) CLSNSLog(fmt)
+#define SEGLog(fmt ...) NSLog(fmt)
 
 extern NSString *SEGAppShouldDisplayBannerNotification;
 extern NSString *SEGAppShouldHideBannerNotification;

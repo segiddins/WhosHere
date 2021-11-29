@@ -10,16 +10,11 @@
 
 #import "SEGMasterViewController.h"
 
-#import <Crashlytics/Crashlytics.h>
-
 #import "WhosHereIAPHelper.h"
 
 #import "Harpy.h"
 
 #import "SEGAdViewController.h"
-
-#import "GAI.h"
-#import "GAITracker.h"
 
 NSString *SEGAppShouldDisplayBannerNotification = @"SEGAppShouldDisplayBannerNotification";
 NSString *SEGAppShouldHideBannerNotification    = @"SEGAppShouldHideBannerNotification";
@@ -37,7 +32,7 @@ NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNoti
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
-    [Crashlytics startWithAPIKey:nil];
+//    [Crashlytics startWithAPIKey:nil];
     [Harpy checkVersion];
     // Override point for customization after application launch.
     [WhosHereIAPHelper sharedInstance];
@@ -57,9 +52,9 @@ NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNoti
         controller.managedObjectContext = self.managedObjectContext;
     }
     [self refreshProStatus];
-    [[GAI sharedInstance] setDefaultTracker:[[GAI sharedInstance] trackerWithTrackingId:nil]];
-    [GAI sharedInstance].dispatchInterval = 20;
-    [[[GAI sharedInstance] defaultTracker] set:@"Pro User" value:_hasPurchasedPro ? @"Yes" : @"No"];
+//    [[GAI sharedInstance] setDefaultTracker:[[GAI sharedInstance] trackerWithTrackingId:nil]];
+//    [GAI sharedInstance].dispatchInterval = 20;
+//    [[[GAI sharedInstance] defaultTracker] set:@"Pro User" value:_hasPurchasedPro ? @"Yes" : @"No"];
     return YES;
 }
 							
@@ -193,8 +188,8 @@ NSString *SEGAppShouldDeleteBannerNotification  = @"SEGAppShouldDeleteBannerNoti
 
 - (void)refreshProStatus
 {
-    _hasPurchasedPro = [[NSUserDefaults standardUserDefaults] boolForKey:@"me.segiddins.whoshere.proupgrade"];
-    if (_hasPurchasedPro) [NSNotificationCenter.defaultCenter postNotificationName:SEGAppShouldDeleteBannerNotification object:self];
+  _hasPurchasedPro = [[NSUserDefaults standardUserDefaults] boolForKey:@"me.segiddins.whoshere.proupgrade"] ?: YES;
+//    if (_hasPurchasedPro) [NSNotificationCenter.defaultCenter postNotificationName:SEGAppShouldDeleteBannerNotification object:self];
 
 }
 

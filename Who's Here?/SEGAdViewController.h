@@ -1,8 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 
-@interface SEGAdViewController : UIViewController  <ADBannerViewDelegate>
+@interface SEGAdViewController : UIViewController
 
 - (instancetype)initWithContentViewController:(UIViewController *)contentController;
-
 @end

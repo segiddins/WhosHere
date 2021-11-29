@@ -9,9 +9,6 @@
 #import "SEGDetailViewController.h"
 #import "SEGStudentDetailTableViewController.h"
 #import "SEGStudentCell.h"
-#import <UI7Kit/UI7Color.h>
-#import "GAIDictionaryBuilder.h"
-#import "GAIFields.h"
 
 @interface SEGDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -64,7 +61,7 @@
                                         action:@selector(startOver:)]];
     for (UIBarButtonItem *barItem in self.toolbarItems) {
         if (![barItem.title isEqualToString:@"Start Over"]) barItem.enabled = NO;
-        [barItem setTitleTextAttributes:@{UITextAttributeTextShadowColor : [UIColor clearColor], UITextAttributeTextColor : [UI7Color defaultTintColor]} forState:UIControlStateNormal];
+        [barItem setTitleTextAttributes:@{UITextAttributeTextShadowColor : [UIColor clearColor], UITextAttributeTextColor : [UIColor systemBlueColor]} forState:UIControlStateNormal];
     }
     GAI_REPORT_SCREEN(@"Individual Class");
 	// Do any additional setup after loading the view, typically from a nib.
@@ -159,14 +156,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    SEGLog(@"%d sections", [[self.fetchedResultsController sections] count]);
+    SEGLog(@"%lu sections", (unsigned long)[[self.fetchedResultsController sections] count]);
     return [[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
-    SEGLog(@"%d rows in section", [sectionInfo numberOfObjects]);
+    SEGLog(@"%lu rows in section", (unsigned long)[sectionInfo numberOfObjects]);
     return [sectionInfo numberOfObjects];
 }
 
@@ -230,7 +227,7 @@
 {
     SEGLog(@"controller did change content");
     UIBarButtonItem *absent = [self.toolbarItems objectAtIndex:1];
-    [absent setTitle:[NSString stringWithFormat:@"%d Absent", [self.detailItem numAbsent]]];
+    [absent setTitle:[NSString stringWithFormat:@"%ld Absent", (long)[self.detailItem numAbsent]]];
     SEGLog(@"%@", absent.title);
     [self.tableView reloadData];
     
